@@ -36,13 +36,15 @@ and JWT-based authentication with a clean backend architecture.
 
 ## 📁 Project Structure
 
+```
 backend/
- ├── controllers/
- ├── models/
- ├── routes/
- ├── middleware/
- ├── server.js
- └── .env
+├── controllers/
+├── models/
+├── routes/
+├── middleware/
+├── server.js
+└── .env
+```
 
 ---
 
@@ -104,11 +106,11 @@ Run the server
 
 npm run dev
 
-🧪 Testing
+## 🧪 Testing
 
 Use Postman to test authentication APIs.
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 
 JWT middleware & protected routes
 
@@ -120,7 +122,7 @@ Email verification
 
 Password reset functionality
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Amit Waghmare
 MERN Stack Developer
