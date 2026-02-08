@@ -58,18 +58,21 @@ Request Body:
   "email": "amit@test.com",
   "password": "123456"
 }
+```
 
 
 Login User
 
-POST /api/auth/login
+POST `/api/auth/login`
 
 Request Body:
-
+```json
 {
   "email": "amit@test.com",
   "password": "123456"
 }
+```
+
 
 ⚙️ Installation & Setup
 
