@@ -74,28 +74,30 @@ Request Body:
 ```
 
 
-⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 Clone the repository
 
-git clone https://github.com/amitwaghmare-web/mern-auth-system.git
+`git clone https://github.com/amitwaghmare-web/mern-auth-system.git`
 
 
 Navigate to backend folder
 
-cd mern-auth-system/backend
+`cd mern-auth-system/backend`
 
 
 Install dependencies
 
-npm install
+`npm install`
 
 
 Create .env file
 
+```json 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_secret_key 
+```
 
 
 Run the server
