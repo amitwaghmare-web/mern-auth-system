@@ -1,0 +1,54 @@
+/* =========================
+   App Wrapper
+========================= */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Page Container
+========================= */
+.page-container {
+  flex: 1;
+}
+
+/* =========================
+   Center Utility
+========================= */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   Protected Page Message
+========================= */
+.auth-message {
+  text-align: center;
+  font-size: 16px;
+  color: var(--muted);
+  margin-top: 40px;
+}
+
+/* =========================
+   Loader
+========================= */
+.loader {
+  text-align: center;
+  font-size: 16px;
+  color: var(--muted);
+  margin-top: 60px;
+}
+
+/* =========================
+   Error Text
+========================= */
+.error-text {
+  color: var(--error);
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
