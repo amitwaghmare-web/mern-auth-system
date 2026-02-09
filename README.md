@@ -1,23 +1,42 @@
 # MERN Authentication System 🔐
 
-A secure and scalable authentication system built using the MERN stack.
-This project demonstrates user registration, login, password hashing,
-and JWT-based authentication with a clean backend architecture.
+A **full-stack MERN Authentication System** with secure user registration, login,
+JWT-based authentication, and protected user profile handling.
+Built with a clean and scalable architecture suitable for real-world applications.
 
 ---
 
 ## 🚀 Features
+
+### Authentication
 - User Registration & Login
-- Password Hashing using bcrypt
-- JWT (JSON Web Token) Authentication
-- Protected Routes
+- Password Hashing using **bcrypt**
+- JWT (JSON Web Token) based Authentication
+- Secure Token Storage
+- Protected Routes (Profile Access)
+
+### Frontend
+- Modern React UI
+- Login & Register Forms
+- Profile Page (Authenticated User Only)
+- Form Validation
+- Professional UI Styling
+
+### Backend
+- RESTful Authentication APIs
 - MongoDB User Schema
+- Authentication Middleware
 - Clean MVC Folder Structure
-- RESTful API
 
 ---
 
 ## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- React Router DOM
+- Axios
+- CSS (Custom Styling)
 
 ### Backend
 - Node.js
@@ -31,29 +50,42 @@ and JWT-based authentication with a clean backend architecture.
 - Git & GitHub
 - Postman
 - Nodemon
+- VS Code
 
 ---
 
 ## 📁 Project Structure
 
 ```
-backend/
-├── controllers/
-├── models/
-├── routes/
-├── middleware/
-├── server.js
-└── .env
-```
+mern-auth-system/
+├── backend/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ ├── server.js
+│ └── .env
+│
+├── frontend/
+│ ├── src/
+│ │ ├── Pages/
+│ │ ├── components/
+│ │ ├── services/
+│ │ ├── styles/
+│ │ └── App.jsx
+│ ├── index.html
+│ └── package.json
+│
+└── README.md
 
+```
 ---
 
 ## 🔗 API Endpoints
 
 ### Register User
-POST `/api/auth/register`
+**POST** `/api/auth/register`
 
-Request Body:
 ```json
 {
   "name": "Amit",
@@ -62,12 +94,8 @@ Request Body:
 }
 ```
 
-
-Login User
-
-POST `/api/auth/login`
-
-Request Body:
+### Login User
+**POST**  `/api/auth/login`
 ```json
 {
   "email": "amit@test.com",
@@ -75,55 +103,64 @@ Request Body:
 }
 ```
 
+### Get User Profile (Protected)
+`GET /api/user/profile`
 
-## ⚙️ Installation & Setup
+Headers:
+```json
+{
+  "Authorization": "Bearer <JWT_TOKEN>"
+}
+```
 
-Clone the repository
+### ⚙️ Installation & Setup
+1️⃣ Clone Repository
 
 `git clone https://github.com/amitwaghmare-web/mern-auth-system.git`
 
-
-Navigate to backend folder
-
-`cd mern-auth-system/backend`
-
-
-Install dependencies
-
+2️⃣ Backend Setup                     
+`cd mern-auth-system/backend`                   
 `npm install`
 
-
-Create .env file
-
-```json 
+Create .env file:
+``` json 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key 
+JWT_SECRET=your_secret_key
 ```
+Run backend:
 
-
-Run the server
-
+`npm run dev`
+3️⃣ Frontend Setup
+``` json
+cd ../frontend
+npm install
 npm run dev
+```
+Frontend runs on:
 
-## 🧪 Testing
+`http://localhost:5173`
 
-Use Postman to test authentication APIs.
+Backend runs on:
 
-## 📌 Future Enhancements
+`http://localhost:5000`
+### 🧪 Testing
+Use Postman to test backend APIs
 
-JWT middleware & protected routes
+Use browser UI for frontend authentication flow
 
-Role-based authentication
+### 📌 Future Enhancements
+Role-based Authentication (Admin/User)
 
-React frontend integration
+Email Verification
 
-Email verification
+Forgot / Reset Password
 
-Password reset functionality
+Refresh Token Handling
 
-## 👨‍💻 Author
+Deployment (Vercel + Render)
 
+### 👨‍💻 Author
 Amit Waghmare
 MERN Stack Developer
 
